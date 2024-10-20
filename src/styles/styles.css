@@ -232,7 +232,7 @@ a:hover {
 
 /* Hero Section */
 .main {
-  background-image: url('images/worldflood2.jpg');
+  background-image: url('/images/worldflood2.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
