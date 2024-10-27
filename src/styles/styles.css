@@ -110,7 +110,7 @@ img {
   font-size: 2rem;
 }
 
-a:hover {
+#navbar a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -691,4 +691,102 @@ a:hover {
 
 .hero__card {
   margin: 50px 0;
+}
+
+/* Product Catalog */
+#products {
+  background-color: lightgray;
+}
+
+.products__card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.products__head {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.products__head p {
+  font-style: italic;
+}
+
+.product__one img {
+  margin-right: 20px;
+  border-radius: 1.5rem;
+  width: 500px; 
+  height: auto; 
+}
+
+.product__one {
+  margin-bottom: 60px;
+}
+
+.product__two img {
+  margin-left: 20px;
+  border-radius: 1.5rem;
+  width: 500px;
+  height: auto;
+}
+
+.product__two {
+  margin-bottom: 35px;
+}
+
+/* Cards */
+.Project-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 5px;
+}
+
+.Project {
+  width: 350px;
+  background-color: #9fe3fd;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgb(0, 0, 0, 0.3);
+  overflow: hidden;
+  transition: transform 0.6s ease;
+  margin-bottom: 35px;
+}
+
+.Project:hover {
+  transform: translateY(-20px);
+}
+
+.Project img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Project-content {
+  padding: 20px;
+
+}
+
+.Project-content h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.Project-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.Project-button {
+  display: inline;
+  background-color: #3498db;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 8px 16px;
 }

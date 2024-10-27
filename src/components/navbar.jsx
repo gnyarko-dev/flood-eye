@@ -40,9 +40,9 @@ function Navbar() {
           >
             <li><a href="/">Home</a></li>
             <li><a href="/projects">Projects</a></li>
-            <li><a href="">About Us</a></li>
+            <li><a href="/#meet-minds">About Us</a></li>
             <li><a href="/blog.html">Blogs</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="/contacts">Contact</a></li>
           </ul>
           <div className="menu-icon" onClick={toggleMenu}>
             <i className="fa-solid fa-bars"></i>
