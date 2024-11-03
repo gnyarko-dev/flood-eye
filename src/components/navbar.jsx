@@ -30,13 +30,14 @@ function Navbar() {
         <nav>
           <div className="logo">
             <a href="/" id="navbar__logo">
-              <img src="../images/floodeye.png" alt="floodeye" />
+              <img src="../images/floodeye.png" alt="floodeye" className='logo' />
               <b>FloodEye</b>
             </a>
           </div>
           <ul
             id="menuList"
             style={{ maxHeight: menuOpen ? '300px' : '0px' }}
+            className='navlist'
           >
             <li><a href="/">Home</a></li>
             <li><a href="/projects">Projects</a></li>
