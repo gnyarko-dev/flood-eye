@@ -1,3 +1,4 @@
+/* Mission Section */
 @media screen and (max-width: 500px) {
     #missions-values {
         background-color: #a6c1cc;
@@ -57,4 +58,47 @@
         margin-bottom: 35px;
         padding: 10px;
       }
+}
+
+/* Welcome Section */
+@media screen and (max-width: 500px) {
+  .main {
+    background-image: url('/images/worldflood2.png');
+    background-size: auto 100%; /* Ensures the width fits the screen */
+    background-position: center; /* Centers the image on the screen */
+    background-repeat: no-repeat;
+  }
+
+  .main__container {
+    display: grid;
+    align-items: center;
+    justify-content: center; /* Centers grid items horizontally */
+    text-align: center; /* Centers text within the container */
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 20px; /* Reduces padding for small screens */
+  }
+
+  .main__btn {
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
+    align-items: center;
+    background-image: linear-gradient(to top, #1498cc 0%, #1498cc 100%);
+    padding: 12px 24px; /* Reduced padding */
+    border: none;
+    border-radius: 4px;
+    color: #fff;  
+    margin: 2rem auto;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    transition: all 300ms ease;
+    outline: none;
+  }
+
+  .main__btn:active {
+    background-image: linear-gradient(to top, #0f7a9e 0%, #0f7a9e 100%); /* Slightly darker for active state */
+  }
 }

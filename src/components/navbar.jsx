@@ -30,7 +30,7 @@ function Navbar() {
         <nav>
           <div className="logo">
             <a href="/" id="navbar__logo">
-              <img src="../images/floodeye.png" alt="floodeye" className='logo' />
+              <img src="/images/floodeye.png" alt="floodeye" className='logo' />
               <b>FloodEye</b>
             </a>
           </div>
