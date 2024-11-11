@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {fadeIn} from '../variant';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(flase);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
