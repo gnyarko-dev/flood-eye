@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import {fadeIn} from '../variant';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(flase);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -14,7 +14,7 @@ function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        setMenuOpen(true); // Close the menu when window width is more than 768px
+        setMenuOpen(false); // Close the menu when window width is more than 768px
       }
     };
 
