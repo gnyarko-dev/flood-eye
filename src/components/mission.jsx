@@ -58,7 +58,7 @@ function Mission() {
                                 We strive to lead with cutting-edge technology and superior performance to meet and exceed the needs of the communities we serve.
                             </p>
                         </div>
-                        <img src="/images/nnovate.png" alt="Innovation and Excellence" />
+                        <img src="/images/1nnovate.png" alt="Innovation and Excellence" />
                     </div>
                 </div>
 

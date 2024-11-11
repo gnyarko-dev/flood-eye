@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/styles.css';
+import { motion } from 'framer-motion';
+import {fadeIn} from '../variant';
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
@@ -12,7 +14,7 @@ function Navbar() {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
-        setMenuOpen(false); // Close the menu when window width is more than 768px
+        setMenuOpen(true); // Close the menu when window width is more than 768px
       }
     };
 
@@ -28,13 +30,24 @@ function Navbar() {
     <div>
       <section id="navbar" className="sticky-top">
         <nav>
-          <div className="logo">
+          <motion.div 
+            variants={fadeIn("left", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: true, amount: 0.7}}
+
+          className="logo">
             <a href="/" id="navbar__logo">
               <img src="/images/floodeye.png" alt="floodeye" className='logo' />
               <b>FloodEye</b>
             </a>
-          </div>
-          <ul
+          </motion.div>
+          <motion.ul
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{once: true, amount: 0.7}}
+
             id="menuList"
             style={{ maxHeight: menuOpen ? '300px' : '0px' }}
             className='navlist'
@@ -44,7 +57,7 @@ function Navbar() {
             <li><a href="/#meet-minds">About Us</a></li>
             <li><a href="/blog.html">Blogs</a></li>
             <li><a href="/contacts">Contact</a></li>
-          </ul>
+          </motion.ul>
           <div className="menu-icon" onClick={toggleMenu}>
             <i className="fa-solid fa-bars"></i>
           </div>
